@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+
+    <link rel="icon" href="resources\logo\logo1.png" type="">
+    <!--Font Awesome Link-- Ask ques to Sir-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<title>
+        Yum Hub
+	</title>
+</head>
+<body>
+
+	<div class="header" >
+        
+		<div class="logo">
+
+			 <img  src="resources\logo\logo1.png">
+ 			
+		</div>
+
+		<div class="nav">
+			<ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#content">Contact Us</a></li>
+            </ul>
+           			
+		</div>
+        
+		<div class="icon">
+			
+            <a style=" cursor: pointer;" class="button" onclick="showsearchbar()">   <i class="fa-solid fa-magnifying-glass"></i></a>
+            <a style=" cursor: pointer;" class="button1">   <i class="fa-solid fa-heart"></i></a>
+            <a style=" cursor: pointer;" class="button2">   <i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="login-signup">
+                <a style=" cursor: pointer;" class="button3">   <i class="fa-solid fa-user"></i></a>
+                   <div class="dropdown">
+                        <a style=" cursor: pointer;" class="login-btn" onclick="showLoginForm()">LOGIN</a>
+                        <a style=" cursor: pointer;" class="signup-btn" onclick="showSignupForm()">SIGNUP</a>
+                   </div>		
+		       </div>
+		
+	</div>
+    <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+
+	</div>
+    <div class="search-comtainer">
+    <input id="search-bar" class="search-box" type="text" placeholder="search food">
+    <div>
+
+	<!--slider-->
+	 <div class="form" >
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2> <font color="#fff">Login</font></h2>
+            <form>
+
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <h5><font color="white">Forget passward ?</font></h5>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="signup-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <!-- Registration form content here -->
+            <h2><font color="#fff">Signup</font></h2>
+            <form>
+                
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+        <img src="resources\logo\m.png" alt="Yum Gub Restaurant">
+    </div>
+</div>
+</div>
+<!--slider-->
+<div onclick="closeseachbar()" class="slideshow-container" id="home">
+
+  <div class="mySlides">
+    <img class="fade"  src="resources\slider\6.jpg" style="width:100%; height: 100vh; ">
+    <div class="text">
+        <h4 class="fade-in">
+             Welcome to <font><u>Yum Hub</u><font></font>
+        </h4>
+        <br>
+        <h1 class="fade-in" >
+                India's best reasturant
+        </h1>
+        <br>
+        <p class="fade-in" ><i>
+           Unique food with unique taste</i>
+        </p>
+
+
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <img class="fade"  src="resources\slider\2.jpg" style="width:100%; height: 100vh;">
+    <div class="text">
+         <h4 class="fade-in">
+            Unveil the Taste of Elegance
+        </h4>
+        <br>
+        <h1 class="fade-in" >
+                Where Every Dish Tells a Flavorful Story
+        </h1>
+        <br>
+        <p class="fade-in" ><i>
+           Experience the Art of Fine Dining</i>
+        </p>
+
+
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <img class="fade" src="resources\slider\5.jpg" style="width:100% ; height: 100vh;">
+    <div class="text">
+         <h4 class="fade-in">
+             Elegant Spaces for Memorable Moments</u>
+        </h4>
+        <br>
+        <h1 class="fade-in" >
+                Where Ambiance Enhances Every Bite
+        </h1>
+        <br>
+        <p class="fade-in" ><i>
+           Immerse Yourself in Comfortable Luxury</i>
+        </p>
+
+</div>
+  </div>
+   <div class="mySlides">
+    <img class="fade"   src="resources\slider\4.jpg" style="width:100%; height: 100vh; ">
+    <div class="text">
+        <h4 class="fade-in">
+            Celebrating Culinary Craftsmanship
+        </h4>
+        <br>
+        <h1 class="fade-in" >
+                Where Passion and Flavor Unite
+        </h1>
+        <br>
+        <p class="fade-in" ><i>
+          Curated by Masterful Hands</i>
+        </p>
+
+        
+</div>
+  </div>
+   <div class="mySlides">
+    <img  class="fade"  src="resources\slider\1.jpg" style="width:100%; height: 100vh; ">
+    <div class="text">
+         <h4 class="fade-in">
+            Elegant Candlelight Dinners
+        </h4>
+        <br>
+        <h1 class="fade-in" >
+                Sharing Moments, Illuminating Hearts
+        </h1>
+        <br>
+        <p class="fade-in" ><i>
+          Feasting on Love and Flavor, Aglow with Romance</i>
+        </p>
+
+        
+    </div>
+  </div>
+  <!--buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+
+
+
+<!--about-->
+<div class="about-containar" id="about">
+
+    <div class="about-immage">
+        <img src="resources\bg\chef.jpg">
+        
+    </div>
+    <div class="about-text">
+        <h1><center> WELCOME TO </center></h1>
+        <br>
+        <h3><I>YUM HUB: Where Indian heritage meets modern taste. Our chefs blend tradition and innovation to create dishes that capture the essence of India's diverse flavors. With a commitment to sustainable practices and warm hospitality, YUM HUB invites you to savor an authentic culinary journeythat celebrates culture celebrates culture and community.</I></h3>
+        <BR>
+        <br>
+
+        <button style=" cursor: pointer;">
+            Know More
+        </button>
+        
+    </div>
+
+</div>
+    
+<!--menu-->
+<div class="menu-containar" id="menu">
+    <div class="heading">
+        <h1>&ndash;Our <span><u> <i>Menu</i></u></span>&ndash;</h1>
+    </div>
+    <!--breakfast-->
+    <h2 class="partision">Breakfast</h2>
+    <div class="manu-box">
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Hamburger.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Hamburger</h2>
+                <p>Burger Delight Taste the Perfection.</p>
+                <p>200<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\chapati.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Chapati</h2>
+                <p>Indian Staple Nutritious Chapati.</p>
+                <p>50<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Momos.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Momos</h2>
+                <p>Delight Flavors wrapped within</p>
+                <p>180<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\undhiya puri.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Kachori</h2>
+                <p>Crispy & Flavorful Indian Snack.</p>
+                <p>50<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="button-menu" style=" height: 50px; width: 100%; "><button style=" cursor: pointer;">view more</button> </div>
+    <!--lunch-->
+    <h2 class="partision">Lunch</h2>
+     <div class="manu-box">
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\fish fry.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Fish Fry</h2>
+                <p>Crispy Coastal Fish Delight.</p>
+                <p>400<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Chicken Fried Rice.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Chicken Fried Rice</h2>
+                <p>Savory Chicken, Flavored Rice</p>
+                <p>150<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Tandoori Chicken.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Tandoori Chicken</h2>
+                <p>Tandoori Flavor, Juicy Delight</p>
+                <p>400<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\garlic prawns.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Garlic Prawns</h2>
+                <p>Garlic Prawns Savory Seafood</p>
+                <p>500<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="button-menu" style=" height: 50px; width: 100%; "><button style=" cursor: pointer;">view more</button> </div>
+    <!--dinner-->
+    <h2 class="partision">Dinner</h2>
+     <div class="manu-box">
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Biriyani.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Biryani</h2>
+                <p>Flavorful Rice, Biryani Bliss</p>
+                <p>200<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Paneer Tikka.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Paneer Tikka</h2>
+                <p>Succulent Grilled Paneer Delight</p>
+                <p>300<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Chowmin.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Chowmein</h2>
+                <p>Noodle Magic: Chowmein Delight</p>
+                <p>100<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+        <div class="manu-card">
+            <div class="menu-item">
+                <img src="resources\menu\Fried chicken.jpg">
+            </div>
+            <div class="menu-text">
+                <h2>Fried chicken</h2>
+                <p>Crispy Fried Chicken Delight</p>
+                <p>400<i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <button style=" cursor: pointer;">Add To Cart</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="button-menu" style=" height: 50px; width: 100%; "><button style=" cursor: pointer;">view more</button> </div>
+
+   
+</div>
+
+<!--gallery-->
+
+<div class="gallary-container" id="gallery">
+     <div class="wrapper">
+        <h1>-Our<i> <u>Gallery</u>-</i></h1>
+    <div class="gallery">
+      <div class="image"><span><img src="resources\gallary\0.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\1.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\2.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\3.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\4.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\5.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\6.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\7.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\8.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\9.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\10.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\11.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\12.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\13.jpg" alt=""></span></div>
+      <div class="image"><span><img src="resources\gallary\14.jpg" alt=""></span></div>
+    </div>
+  </div>
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image<p class="current-img"></p>of<p class="total-img"></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box">
+      <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+      <div class="slide next"><i class="fas fa-angle-right"></i></div>
+      <img src="" alt="">
+    </div>
+  </div>
+  <div class="shadow"></div>
+
+</div>
+<!--review-->
+
+<!--review-->
+
+
+
+<!--scrollup-->
+
+<div class="scrollup">
+    <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
+
+<!--footer-->
+
+<div class="footer" id="content">
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h1>yum hub</h1>
+                <p>Founded in 2023, Yum Hub is your gateway to delectable moments. Experience taste, togetherness, and innovation with us
+            </p>
+                
+            </div>
+            <div class="column">
+                <h3>contect us <div class="underline"><span></span></div></h3>
+                <p>Sonarpur</p>
+                <p>Sonargaon,Nischintapur RD</p>
+                <p>Kolkata, PIN 743329, India</p>
+                <p class="email">yumhub2023@gmail.com</p>
+                <h4>+91 - 9883737889</h4>
+
+                
+            </div>
+            <div class="column">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contect">Contacts</a></li>
+                </ul>
+                
+            </div>
+            <div class="column">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                
+            </div>
+            <div class="column">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.62993940189574!2d88.42145037649303!3d22.437370457257252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02726cc5fd0e7b%3A0x680561555224c9c0!2s1172%2C%20Nischintapur%20Rd%2C%20Nischitapur%20Rd%2C%20Kolkata%2C%20West%20Bengal%20700150!5e0!3m2!1sen!2sin!4v1691689770001!5m2!1sen!2sin" width="100%" height="100%" style="border:2px solid #FFA600;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        <hr>
+        <p class="copy">Exploring Flavors | Yum Hub © 2023</p>
+    </footer>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
